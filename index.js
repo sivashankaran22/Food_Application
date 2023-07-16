@@ -31,7 +31,7 @@ app.post('/api/foodes',(req,res)=>{
 
     food.save()
     .then(result =>{
-        response.status(201).json({message: 'Food Ceated Successfully'});
+        res.status(201).json({message: 'Food Ceated Successfully'});
     })
 })
 
